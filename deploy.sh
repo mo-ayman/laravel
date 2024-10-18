@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Ensure the script stops if any command fails
+set -e
+
+# Set variables
+APP_DIR="laravel"  # Change this to your application's directory
+BRANCH="main"                        # The branch to pull from (main by default)
+
+# Step 1: Navigate to the application directory
+cd $APP_DIR
+
+# Step 2: Pull the latest changes from GitHub
+echo "Pulling latest changes from the $BRANCH branch..."
+git pull
+
+# Step 3: Install PHP dependencies using Composer
+echo "Installing PHP dependencies..."
+composer install --no-interaction --prefer-dist --optimize-autoloader
+
+# Step 4: Run database migrations
+echo "Running database migrations..."
+php artisan migrate --force
+
+echo "Deployment complete!"
