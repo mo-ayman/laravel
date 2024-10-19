@@ -23,5 +23,6 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }}   # Add SSH private key in GitHub secrets
         port: '22'                           # Default SSH port
         script: |
+          ls -la &&
           cd laravel && bash deploy.sh
 
