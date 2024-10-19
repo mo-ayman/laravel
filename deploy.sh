@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ensure the script stops if any command fails
-touch here
+ls -la
 # Set variables
 APP_DIR="laravel"  # Change this to your application's directory
 
