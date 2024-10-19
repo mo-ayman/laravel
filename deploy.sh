@@ -10,7 +10,9 @@ cd $APP_DIR
 
 # Step 2: Pull the latest changes from GitHub
 echo "Pulling latest"
-git pull
+git fetch origin
+git reset --hard 
+
 
 # Step 3: Install PHP dependencies using Composer
 echo "Installing PHP dependencies..."
