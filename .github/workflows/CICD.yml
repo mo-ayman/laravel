@@ -27,4 +27,3 @@ jobs:
           chmod +x /home/***/laravel/deploy.sh &&  # Ensure deploy.sh is executable
           bash /home/***/laravel/deploy.sh         # Run the deploy script from its correct location
 
-
