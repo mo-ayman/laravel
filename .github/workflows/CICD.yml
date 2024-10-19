@@ -22,7 +22,9 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }}   # Add SSH private key in GitHub secrets
         port: '22'
         script: |
-          ls -la /home/azureuser &&
-          cd /home/azureuser/laravel &&
+          ls -la /home/*** &&
+          ls -la /home/***/laravel &&   # List files inside laravel directory
+          cd /home/***/laravel &&       # Use full path to avoid errors
           chmod +x deploy.sh &&
           bash deploy.sh
+
