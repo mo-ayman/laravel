@@ -13,7 +13,6 @@ echo "Pulling latest"
 git fetch origin
 git reset --hard 
 
-
 # Step 3: Install PHP dependencies using Composer
 echo "Installing PHP dependencies..."
 composer install --no-interaction --prefer-dist --optimize-autoloader
