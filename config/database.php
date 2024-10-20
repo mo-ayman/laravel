@@ -38,7 +38,7 @@ return [
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', 'mysql-serverr.mysql.database.azure.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'mysql'),
+            'database' => env('DB_DATABASE', 'mydb'),
             'username' => env('DB_USERNAME', 'mysqladmin'),
             'password' => env('DB_PASSWORD', 'yourStrongPassword!'),
             'unix_socket' => env('DB_SOCKET', ''),
