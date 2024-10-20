@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: Update Local Repo
-      run: cd /home/azureuser/laravel && git fetch && git reset --hard 
+      run: cd /home/azureuser/laravel && git pull
     - name: Install Dependencies
       run: cd /home/azureuser/laravel && composer install --no-interaction --prefer-dist --optimize-autoloader
     - name: Run 
